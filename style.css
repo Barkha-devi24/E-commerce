@@ -1,0 +1,993 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  overflow-x: hidden;
+}
+
+.nav{
+  height: 10vh;
+  width: 100%;
+  display: flex;
+   background-color: #fff;
+   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+     position: relative;
+}
+#nav-title{
+  height: 10vh;
+  width: 40%;
+  font-size: 50px;
+
+  margin-left: 40px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+}
+.nav-links{
+
+  height: 10vh;
+  width: 60%;
+  gap:80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.nav-links a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  
+}
+ #hamburger{
+  display: none;
+}
+ .nav .shop{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin-top: 18px;
+  margin-right: 25px;
+
+  
+
+}
+.nav .shop:hover{
+  color: cadetblue;
+}
+.nav-links a:hover{
+  color:rgb(46, 139, 134);
+  text-decoration: underline;
+}
+.hero{
+  height: 80vh;
+ width: 100%;
+  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) ,url(https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  
+background-size: cover;
+background-repeat: no-repeat;
+background-position:80% center;
+display: flex;
+align-items: center;
+
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+
+}
+.hero-text {
+  padding-left: 60px;
+  color: white;
+
+}
+
+.hero-text #sea{
+    color:rgb(34, 251, 240);
+
+}
+.hero-text p{
+  color: #ccc;
+  padding-top: 5px;
+
+}
+.hero-text button{
+  padding: 10px;
+  color: white;
+  background-color:transparent;
+  margin-left: 70px;
+  margin-top: 15px;
+  border: 1px solid white;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.hero-text button:hover{
+  background-color:rgb(46, 139, 134);
+  border: none;
+}
+#box{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+/* ===== CARDS ===== */
+.card-container{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.card{
+  width: 10rem;
+  background: #fff;
+  border-radius:1rem;
+  padding: 1.5rem;
+  box-shadow: 0 0.6rem 1.5rem rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#image-box img{
+  width: 100%;
+  border-radius: 0.3rem;
+}
+
+
+
+.cart-btn{
+  background: white;
+  color: gray;
+  border: 1px solid gray;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.cart-btn:hover{
+  background: black;
+  color: white;
+}
+.featured{
+  
+  width: 100%;
+  box-shadow: 0 0.6rem 1.5rem rgba(0,0,0,0.1);
+  
+}
+ #featured-text{
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#featured-text p{
+  color: #636060;
+  margin-top: 4px;
+
+}
+ .menu-card{
+      width: 250px;
+      background: #fff;
+      border-radius:15px;
+      padding: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    #image-box{
+      position: relative;
+    }
+    #image-box img{
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .menu-card h3{
+      margin: 12px 0 5px;
+    }
+    .rating{
+      margin: 8px 0;
+      color: orangered;
+    }
+    .menu-btn{
+      background:rgb(46, 139, 134) ;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .menu-btn:hover{
+      background: rgb(46, 139, 134);
+    }
+    .menu-container{
+      display: flex;
+      justify-content: space-evenly;
+      gap:20px;
+      flex-wrap: wrap;
+    }
+.repair{
+  height: 50vh;
+  width: 100%;
+  background:url(https://images.unsplash.com/photo-1698091235311-f4235a2fffb5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fGJsYWNrJTIwZGVzaW5nZXIlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww);
+  
+background-size: cover;
+background-repeat: no-repeat;
+background-position:80% center;
+margin: 5px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+margin-top: 80px;
+color: white;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+
+}
+.repair p{
+  font-size: 20px;
+}
+.repair span{
+  color: red;
+}
+.repair button{
+  margin-top: 10px;
+  padding: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.banners{
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+
+}
+.banners .one{
+  width: 40%;
+  height: 50vh;
+  
+}
+#buy-two{
+   background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) , url(https://plus.unsplash.com/premium_photo-1664202526559-e21e9c0fb46a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D);
+   
+  
+background-size: cover;
+background-repeat: no-repeat;
+background-position:80% center;
+display: flex;
+align-items: center;
+
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+}
+#buy-one{
+   background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) , url(https://media.istockphoto.com/id/2195321764/photo/flat-lay-of-woman-spring-fashion-collection-in-casual-style-top-view-of-plaid-shirt-handbag.webp?a=1&b=1&s=612x612&w=0&k=20&c=_YAJZoiS6amxYTnFsCG81Zk9_T6GImr3JTxs10wGVQk=);
+   
+  background-size: cover;
+background-repeat: no-repeat;
+background-position:80% center;
+display: flex;
+align-items: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+
+}
+
+.banners-sec{
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.banners-sec h3{
+  color: red;
+}
+.banners-sec h1{
+  color: white;
+}
+.banners-sec .two{
+  width: 30%;
+  height: 30vh;
+  
+}
+#sec-one{
+   background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) , url(https://images.unsplash.com/photo-1760565030264-c737b92e887d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvb3BpbmclMjBiYWdzfGVufDB8fDB8fHww);
+   
+  background-size: cover;
+background-repeat: no-repeat;
+background-position:80% center;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+
+}
+#sec-two{
+   background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) , url(https://images.unsplash.com/photo-1654939438953-58dca903c976?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njl8fGZvb3R3ZWFyJTIwY29sbGVjdGlvbnxlbnwwfHwwfHx8MA%3D%3D);
+   
+  background-size: cover;
+background-repeat: no-repeat;
+background-position:80% center;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+
+}
+#sec-three{
+   background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) , url(https://media.istockphoto.com/id/1170635789/photo/close-up-of-colorful-t-shirts-on-hangers-apparel-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=4wrKtXrUjm5g8nXPTynOBHnN7wLVdApV9OX0bvqECOY=);
+   
+  background-size: cover;
+background-repeat: no-repeat;
+background-position:80% center;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+
+}
+.newsletters{
+  width: 100%;
+  height: 30vh;
+  background-color:rgb(1, 1, 43);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.news{
+  height: 30vh;
+  width: 40%;
+
+  
+}
+#news-one{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+#news-one h1{
+  color: white; 
+  
+}
+#news-one p{
+  color: #636060;
+}
+#news-one span{
+  color: gold;
+ }
+ #news-two{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ #news-two input{
+  height: 40px;
+  width: 300px;
+  border: none;
+  border-radius:0;
+ }
+ #news-two input::selection{
+  border: none;
+ }
+ #news-two button{
+  height: 40px;
+  width: 100px;
+  background-color:  rgb(46, 139, 134);
+  color: white;
+  border: none;
+  border-radius: 0;
+ }
+ .foot{
+  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+ }
+ .foot-box-one{
+
+  width: 25%;
+  
+text-align: left;
+  
+
+ }
+ .foot-box-one h1{
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 15px;
+ }
+ .foot-box-one h2{
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 5px;
+ }
+ .foot-box-one span{
+  font-weight: bold;
+  margin-left: 5px;
+  color: black;
+ }
+ .foot-box-one p{
+   color: #636060;
+ }
+ #fa{
+  margin-top: 10px;
+  margin-left: 5px;
+  display: flex;
+  gap: 0.9rem;
+ }
+ .foot-box-two{
+
+  width: 20%;
+
+  text-align: left;
+ }
+
+ .foot-box-two h2 {
+  
+  margin-top: 30px;
+  margin-left: 30px;
+  
+
+ }
+ .foot-box-two ul{
+  line-height: 1.7rem;
+  margin-left: 30px;
+  color: #636060;
+ }
+ .foot-box-three{
+
+  width: 20%;
+  
+
+ }
+ .foot-box-three h2 {
+  
+  margin-top: 30px;
+  margin-left: 30px;
+  
+
+ }
+ .foot-box-three ul{
+  line-height: 1.7rem;
+  margin-left: 30px;
+  color: #636060;
+ }
+ .foot-box-four{
+  
+  width: 25%;
+
+
+ }
+ .foot-box-four h2{
+  margin-left: 30px;
+  margin-top: 30px;
+ }
+ .foot-box-four p{
+  color: #636060;
+  margin-top:10px;
+  margin-left: 5px;
+ }
+ .foot-box-four button{
+  padding: 10px;
+  width: 120px;
+  margin-top: 20px;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  
+ }
+ .foot-box-four #pay{
+  margin-top: 10px;
+  display: flex;
+  justify-content:flex-start;
+  gap: 0.6rem;
+  font-size: 18px;
+  margin-left: 10px;
+
+  
+  
+
+ }
+ #last-line{
+  text-align: center;
+  color: #636060;
+  margin-bottom: 20px;
+ }
+ .close-btn{
+  position:absolute;
+  font-size: 40px;
+  cursor: pointer;
+  top:5px;
+  right: 5px;
+  background: red;
+  color: white;
+  border: none;
+  
+ }
+ /* shop page ka css */
+ .stay{
+  height: 50vh;
+  width: 100%;
+  background:url(https://img.freepik.com/premium-photo/black-friday-sale-banner-concept-design-shopping-bag-black-background-with-copy-space-3d-render_46250-3239.jpg?w=740);
+  
+background-size: cover;
+background-repeat: no-repeat;
+background-position:80% center;
+margin: 5px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+margin-top: 2px;
+color: white;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+
+}
+.stay p{
+  font-size: 20px;
+  color: #ccc;
+}
+.stay span{
+  color: red;
+}
+.space{
+  margin-top: 50px;
+}
+.product-page{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  background:#fff;
+  z-index:9999;
+  overflow:auto;
+}
+
+.product-container{
+  display:flex;
+  padding:60px;
+  gap:60px;
+}
+
+.product-image{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.product-image img{
+  width:80%;
+}
+
+.product-details{
+  flex:1;
+  position:relative;
+}
+
+.product-details h1{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.brand{
+  color:gray;
+}
+
+.price{
+  font-size:24px;
+  color:red;
+  margin:15px 0;
+}
+
+.rating{
+  margin-bottom:15px;
+}
+
+.description{
+  margin-bottom:20px;
+  line-height:1.6;
+}
+
+.size-section button{
+  padding:10px 20px;
+  margin-right:10px;
+  cursor:pointer;
+}
+
+.btn-group{
+  margin-top:30px;
+}
+
+.cart-btn{
+  padding:12px 25px;
+  margin-right:10px;
+  background:black;
+  color:white;
+  border:none;
+  cursor:pointer;
+}
+
+.buy-btn{
+  padding:12px 25px;
+  background:red;
+  color:white;
+  border:none;
+  cursor:pointer;
+}
+
+.close-btn{
+  position:absolute;
+  top:0;
+  right:0;
+  font-size:22px;
+  cursor:pointer;
+}
+
+
+ 
+ 
+ 
+  
+/* ===============================
+   MOBILE RESPONSIVE (0px–768px)
+=================================*/
+
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .nav {
+    
+    justify-content:space-around;
+    
+  }
+
+  #nav-title {
+    font-size: 35px;
+    margin-top: 10px;
+    width: auto;
+    
+  }
+
+ #hamburger {
+    display: block;
+    font-size: 35px;
+    cursor: pointer;
+    margin-right: 50px;
+    margin-top: 10px;
+  
+  }
+  #hamburger:hover{
+    color: cadetblue;
+  }
+  .nav-links.show{
+    right: 0;
+  }
+
+
+  .nav .shop {
+    font-size: 37px;
+    margin-top: 10px;
+    
+    
+  }
+
+  .nav-links{
+    
+    position:fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 80vh;
+    background:black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: 0.3s ease-in-out;
+    z-index: 1000;
+    color:white;
+    border-radius: 5px;
+    
+  }
+  .nav-links a{
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .nav-links a:hover{
+    text-decoration: none;
+    background-color:cadetblue ;
+    color:white;
+  }
+  
+
+  
+
+  /* HERO SECTION */
+  .hero {
+    height: 60vh;
+    margin: 0;
+    background-position: center;
+  }
+
+  .hero-text {
+    padding: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text h4 {
+    font-size: 16px;
+  }
+
+  .hero-text button {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-left: 0;
+  }
+
+  /* FEATURE CARDS */
+  #box {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 50%;
+  }
+
+  /* FEATURED PRODUCTS */
+  .featured {
+    height: auto;
+    padding: 10px 10px;
+  }
+
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-card {
+    width: 90%;
+  }
+
+  /* REPAIR SECTION */
+  .repair {
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .repair h1 {
+    font-size: 20px;
+  }
+
+  /* BANNERS */
+  .banners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+  }
+
+  .banners .one {
+    width: 100%;
+    height: 40vh;
+  }
+
+  /* SECOND BANNERS */
+  .banners-sec {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    gap: 20px;
+    border: none;
+  }
+
+  .banners-sec .two {
+    width: 80%;
+    height: 30vh;
+
+  }
+
+  /* NEWSLETTER */
+  .newsletters {
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    gap:5px;
+  }
+
+  .news {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  #news-two {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #news-two input {
+    width: 100%;
+  }
+
+  #news-two button {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .foot {
+    
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .foot-box-one,
+  .foot-box-two,
+  .foot-box-three,
+  .foot-box-four {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+.foot-box-one h1{
+  text-align: center;
+}
+.foot-box-one h2{
+  text-align: center;
+}
+#fa i{
+  margin: auto;
+
+
+}
+  .foot-box-two ul,
+  .foot-box-three ul {
+    margin-left: 10px;
+  }
+  #pay i{
+  margin:auto;
+  }
+
+  #last-line {
+    margin-bottom: 20px;
+      font-size: 14px;
+  }
+  
+  /* myy*/
+   .menu-card{
+      width: 250px;
+      background: #fff;
+      border-radius:15px;
+      padding: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    #image-box{
+      position: relative;
+    }
+    #image-box img{
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .menu-card h3{
+      margin: 12px 0 5px;
+    }
+    .rating{
+      margin: 8px 0;
+      color: orangered;
+    }
+    .menu-btn{
+      background:rgb(46, 139, 134) ;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .menu-btn:hover{
+      background: rgb(46, 139, 134);
+    }
+    .menu-container{
+      display: flex;
+      justify-content: space-evenly;
+      gap:10x;
+      flex-wrap: wrap;
+    }
+    /*shop page ka css */
+    /* Mobile Responsive */
+@media (max-width: 768px){
+
+  .product-container{
+    flex-direction: column;   /* side by side ki jagah upar neeche */
+    padding:20px;
+    gap:20px;
+  }
+
+  .product-image img{
+    width:100%;
+  }
+
+  .product-details h1{
+    font-size:22px;
+  }
+
+  .price{
+    font-size:20px;
+  }
+
+  .size-section button{
+    padding:8px 15px;
+    margin-bottom:10px;
+  }
+
+  .btn-group{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .cart-btn,
+  .buy-btn{
+    width:100%;
+  }
+
+  .close-btn{
+    top:10px;
+    right:15px;
+  }
+
+}
+}
+

@@ -657,11 +657,241 @@ align-items: center;
   font-size:22px;
   cursor:pointer;
 }
+/* blog page ka css*/
+.read{
+  height: 40vh;
+  width: 100%;
+  background:url(https://images.unsplash.com/photo-1513185041617-8ab03f83d6c5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  
+background-size: cover;
+background-repeat: no-repeat;
+background-position:80% center;
+margin: 5px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+margin-top: 2px;
+color: white;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
 
- 
- 
- 
+
+}
+.read p{
+  font-size: 20px;
+  color: #ccc;
+}
+.large{
+  height: 50vh;
+  width: 100%;
+  display: flex;
+}
+.large-item{
+  height: 50vh;
+  width: 50%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+
+}
+#large-item-pic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+#large-pic{
+  height: 40vh;
+  width: 80%;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  
+}
+#large-item-text h1{
+  margin-top: 70px;
+  margin-left: 20px;
+  
+}
+#large-item-text p{
+  color: #636060;
+  word-spacing: 7px;
+  margin-left: 20px;
+}
+/*  about ka css */
+.know{
+
+
+height: 40vh;
+  width: 100%;
+  background:url(https://images.unsplash.com/photo-1598015132635-131afe3ba07f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  
+background-size: cover;
+background-repeat: no-repeat;
+background-position:80% center;
+margin: 5px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+margin-top: 2px;
+color: white;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+
+}
+.know p{
+  font-size: 20px;
+  color: #ccc;
+}
+.know-div{
+  height: 60vh;
+  width: 100%;
+  display: flex;
+}
+.know-item{
+  height: 60vh;
+  width: 50%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+
+}
+#know-item-pic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+#know-pic{
+  height: 60vh;
+  width: 80%;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  
+}
+#know-item-text h1{
+  margin-top: 50px;
+  margin-left: 20px;
+  
+}
+#know-item-text p{
+  color: #636060;
+  word-spacing: 7px;
+  margin-left: 20px;
+}
+/*  contact ka css*/
+.frm{
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.frm-div{
+  height: 70vh;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  
+  
+
+}
+
+.frm h3{
+  color: #636060;
+  margin-left: 30px;
+}
+.frm h1{
+  margin-left: 30px;
+}
+.frm input{
+  width: 80%;
+  margin-top: 20px;
+  padding: 10px;
+  margin-left: 30px;
+  
+}
+.frm input:focus{
+  outline: none;
+}
+.frm textarea{
+  width: 80%;
+  margin-top: 20px;
+  padding: 20px;
+  margin-left: 30px;
+  resize: none;
+  
+
+}
+.frm textarea:focus{
+  outline: none;
+}
+
+
+.frm button{
+  height: 50px;
+  width: 150px;
+  background-color:rgb(46, 139, 130);
+  color: white;
+  border: none;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.cart{
+
+
+height: 40vh;
+  width: 100%;
+  background:url(https://png.pngtree.com/background/20230618/original/pngtree-supermarket-alley-a-3d-modeling-of-a-shopping-cart-picture-image_3750842.jpg);
+  
+background-size: cover;
+background-repeat: no-repeat;
+background-position:80% center;
+margin: 5px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+margin-top: 2px;
+color: white;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+
+}
+.cart p{
+  font-size: 20px;
+  color:#ccc;
+}
+ table{
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  width: 100%;
+  white-space: nowrap;
+  margin-left: 4px;
+ }
+ table thead{
+  border-bottom: 1px solid #e2e2e2;
+ }
+ #cart-body td{
+  text-align: center;
+ }
+ #cart-body input{
+  width: 50px;
+  padding: 5px;
+ }
+ #grand-total{
+  text-align: right;
+  margin-right: 180px;
+ }
   
 /* ===============================
    MOBILE RESPONSIVE (0px–768px)
